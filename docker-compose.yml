@@ -14,7 +14,7 @@ services:
 # Проброс папок
         volumes:
             - ./Nginx/core:/etc/nginx/conf.d
-            - ./Nginx/www:/var/www/
+            - ./app:/var/www/app
             - ./Nginx/Logs:/var/log/nginx/
             - ./Nginx/html:/usr/share/nginx/html/
 # Укажем зависимости
@@ -49,7 +49,7 @@ services:
         container_name: php-fpm
 
         volumes:
-            - ./Nginx/www:/var/www
+            - ./app:/var/www/app
 
         links:
             - mysql
