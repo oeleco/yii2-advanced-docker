@@ -1,0 +1,2 @@
+2020/11/11 15:34:34 [error] 19#19: *1 directory index of "/var/www/app/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost"
+2020/11/11 15:34:34 [error] 19#19: *1 open() "/var/www/app/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
